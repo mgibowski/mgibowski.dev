@@ -88,7 +88,7 @@ Let's take a look at it:
   }
 ```
 
-Firstly, it generates the URL of the website fragment serving as a widget. You may notice the different URL for `development` environment. I assume you would be developing the web app serving your widget locally and you might want it to be served from localhost when running Embedder in `development` mode.
+Firstly, it generates the URL of the website fragment serving the widget. You may notice the different URL for `development` environment. I assume you would be developing the web app serving your widget locally and you might want it to be served from localhost when running Embedder in `development` mode.
 
 Then, there is a method invocation for creating an `iframe` and a separate call to replace the placeholder with this `iframe`.
 
