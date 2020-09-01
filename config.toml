@@ -1,0 +1,39 @@
+# The URL the site will be built for
+base_url = "https://mgibowski.dev"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+#highlight_theme = "demain"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "simple-dev-blog"
+
+generate_feed = true
+
+title = "Michał Gibowski, Scala and Elixir programmer"
+description = "Blog with engineering tips for developing modern web applications."
+
+taxonomies = [
+  { name = "tags" }
+]
+
+[extra]
+# Put all your custom variables here
+
+nav = [
+  { name = "Home", path = "/" },
+  { name = "Blog", path = "/blog/" }
+]
+
+author = "Michał Gibowski"
+
+footer_about = """
+You are reading a blog created by Michał Gibowski. <br />
+You can follow him on [Twitter](https://twitter.com/mgibowski), [GitHub](https://github.com/mgibowski) or via [Atom feed](/atom.xml).
+"""
