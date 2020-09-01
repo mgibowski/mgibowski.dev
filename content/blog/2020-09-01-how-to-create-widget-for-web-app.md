@@ -145,6 +145,6 @@ Handling such a message in the widget code is left as an exercise for the reader
 Thanks for visiting,
 Michał.
 
-_If you spot any mistakes in this post, please let me know via [GitHub](https://github.com)._
+_If you spot any mistakes in this post, please let me know via [GitHub](https://github.com/mgibowski/mgibowski.dev/pull/1/files)._
 
 [^1]: As of 2020 [Webpack](https://webpack.js.org/) is the de-facto standard for bundling JavaScript projects.
