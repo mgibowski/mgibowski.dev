@@ -1,5 +1,6 @@
 +++
 title = "How to create widget for your web app"
+description = "How to enable other developers to include portions of your web app as interactive widgets on their websites."
 [taxonomies]
 tags = [ "JavaScript" ]
 +++
