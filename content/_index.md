@@ -4,7 +4,7 @@ title = "Michał Gibowski, Scala and Elixir programmer"
 
 ## 👋 Hi, Welcome to my website
 
-I'm Michał Gibowski, software engineer developing web applications using Scala and Elixir.
+I'm Michał Gibowski, a software engineer developing web applications using Scala and Elixir.
 
 I created this website to share engineering tips through [blog posts](/blog/). This site doesn't use cookies and doesn't store any personal information about its visitors.
 
