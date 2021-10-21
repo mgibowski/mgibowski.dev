@@ -12,28 +12,40 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-theme = "simple-dev-blog"
-
 generate_feed = true
 
 title = "Michał Gibowski, Scala and Elixir programmer"
-description = "Blog with engineering tips for developing modern web applications."
+description = "Blog with engineering tips and opinions on developing modern web applications."
+
+theme = "simple-dev-blog"
 
 taxonomies = [
   { name = "tags" }
 ]
 
 [extra]
-# Put all your custom variables here
+
+dark_mode = false
 
 nav = [
   { name = "Home", path = "/" },
   { name = "Blog", path = "/blog/" }
 ]
 
+icon = "icon.png"
+profile_small = "icon.png"
+profile_large = "profile.jpg"
+
+accent = "#05a081"
+accent_light = "#82d0c0"
+
 author = "Michał Gibowski"
 
 footer_about = """
 You are reading a blog created by Michał Gibowski. <br />
 You can follow him on [Twitter](https://twitter.com/mgibowski), [GitHub](https://github.com/mgibowski) or via [Atom feed](/atom.xml).
+"""
+
+not_found_message = """
+This is not the page you're looking for... return back to [safety?](/)
 """
