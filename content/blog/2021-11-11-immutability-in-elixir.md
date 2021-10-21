@@ -7,7 +7,7 @@ tags = [ "Elixir" ]
 
 Data in Elixir is immutable. It's not immutable by default. It's simply immutable. There's no way around it. This fact has some interesting consequences.
 
-k## Benefits of immutability
+## Benefits of immutability
 
 ### Easier reasoning
 
