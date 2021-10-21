@@ -7,7 +7,7 @@ tags = [ "Elixir" ]
 
 Data in Elixir is immutable. It's not immutable by default. It's simply immutable. There's no way around it. This fact has some interesting consequences.
 
-## Benefits of immutability
+k## Benefits of immutability
 
 ### Easier reasoning
 
@@ -23,7 +23,8 @@ If you ever wrote concurrent code in Java or C++, you know that it's not simple 
 
 Now, let's take a look at Elixir. Here's an example from the book _"Elixir in Action"_ by Saša Jurić:
 
-```
+```ex
+ #TODO
 ```
 
 
@@ -45,7 +46,7 @@ Let's take a look at an example from Java:
 const offers = fetchOffersForId(42);
 const offersWithMetadata = addMetadata(offers);
 const processedOffers = process(offersWithMetadata);
-````
+```
 
 You are forced to give a new name to the same variable (`offers`), just because the concept you are referring to in your code, at each line is at the different point in time.
 
@@ -57,7 +58,7 @@ Elixir brings much better solutions to the table.
 
 Firstly, the pipeline operator. Which actually is a macro.
 
-```
+```elixir
 fetch_offers_for_id(42)
 |> add_metadata()
 |> process()
@@ -101,6 +102,5 @@ It would be quite strange to be forced to verbously give a different name to thi
 Immutability and name rebinding in Elixir is actually very alike things in our world. You can not change the past (_immutability_) and you are free to give the same names to concepts, even if they change over time (_name rebinding_).
 
 That's all I have to say about immutability in Elixir. I hope you enjoyed it!
-
 
 [^1]: Virtual machine can take advantage of the fact that both of those pieces of data can not be mutated and if they share any common part - they will both point to the same memory location. Nothing needs to be copied, so memory usage is very effecient.
