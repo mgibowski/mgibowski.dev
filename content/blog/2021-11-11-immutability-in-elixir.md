@@ -76,14 +76,14 @@ That's it for pipelines. But that's not all for Elixir.
 
 Another technique of making working with immutable variables easy is _rebinding_.
 
-As in Elixir there is no such thing as a mutable variable, you are free to do this:
+In Elixir there is no such thing as a mutable variable, so you are free to do the following:
 
 ```elixir
 offers = fetch_offers_for_id(42)
 offers = add_metadata(offers)
 ```
 
-This seems to be confusing to newcomers. You may think: I thought data in Elixir is immutable, what the hell?
+This seems to be confusing to newcomers. You may think: _I thought data in Elixir is immutable, what the hell?_
 
 Well, yes - data is in fact immutable. The offers returned by the first function reside in some memory and there is no way your program can change it. In the second line you pass this data as an argument and get some new data in the new memory location[^1].
 
@@ -94,12 +94,10 @@ In fact, we do it all the time in our lifes.
 
 There is a saying: _"No man can enter the same river twice"_. And it is true. Nothing is persistent. Whenever you enter a river, you are in contact with some particles of water. If you do that again, all of those particles are already long time gone. You are entering a completely different water, a different river. Yet, for our conveniece, we give it the same name - a _Hudson River_.
 
-It's the same with everything. We call one city _Tokio_ and we were calling it with the same name 300 years ago. Although most of the buildings and all of the inhabitants have changed multiple times in between.
-
-It is perfectly fine for us humans to give a name to a concept that is changing over time.
+It is perfectly fine for us, humans, to give a name to a concept that is changing over time.
 It would be quite strange to be forced to verbously give a different name to things based on their current state. Imaging saying _me_just_woken_up_, _me_before_coffee_, _me_drinking_coffee_, _me_working_ just because you are transitioning from one state to another. Crazy, isn't it? Yet mainsteam languages force us to do this when dealing with immutable data.
 
-Immutability and name rebinding in Elixir is actually very alike things in our world. You can not change the past (_immutability_) and you are free to give the same names to concepts, even if they change over time (_name rebinding_).
+Immutability and name rebinding in Elixir are actually very alike things in our world. You can not change the past (_immutability_) and you are free to give the same names to concepts, even if they change over time (_name rebinding_).
 
 That's all I have to say about immutability in Elixir. I hope you enjoyed it!
 
