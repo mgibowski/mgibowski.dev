@@ -21,16 +21,7 @@ Let's revise some wording. _Parallelism_ means two or more threads of execution 
 
 If you ever wrote concurrent code in Java or C++, you know that it's not simple at all. It takes a lot of effort to avoid race conditions and deadlocks. In order to achieve transactionality, you need to apply mechanisms like locks and semaphores with great amount of care and attention. There are only few, very simple primitives that can be mutated atomically (like `AtomicInt`).
 
-Now, let's take a look at Elixir. Here's an example from the book _"Elixir in Action"_ by Saša Jurić:
-
-```ex
- #TODO
-```
-
-
-This function does A,B,C.
-
-You see? No semaphore, no lock, nothing. Just immutable data and it's perfectly thread-safe.
+Thanks to immutability, elixir allows you to create code performing atomic in-memory operations with simple, elegant and clear code without the use of semaphores or locks. Towards the end of this blog post, you will see an example for that taken from the book _"Elixir in Action"_ by Saša Jurić.
 
 ## Immutability in other languages
 
@@ -98,6 +89,17 @@ It is perfectly fine for us, humans, to give a name to a concept that is changin
 It would be quite strange to be forced to verbously give a different name to things based on their current state. Imaging saying _me_just_woken_up_, _me_before_coffee_, _me_drinking_coffee_, _me_working_ just because you are transitioning from one state to another. Crazy, isn't it? Yet mainsteam languages force us to do this when dealing with immutable data.
 
 Immutability and name rebinding in Elixir are actually very alike things in our world. You can not change the past (_immutability_) and you are free to give the same names to concepts, even if they change over time (_name rebinding_).
+
+To conclude, let's take a look at the promised example code from the book _"Elixir in Action"_ by Saša Jurić:
+
+```elixir
+ def complex_transformation(original_data) do
+   original_data
+   p transformation_1(...)
+   p transformation_2(...)
+   ...
+ end
+```
 
 That's all I have to say about immutability in Elixir. I hope you enjoyed it!
 
